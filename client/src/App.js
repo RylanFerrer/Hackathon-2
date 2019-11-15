@@ -1,16 +1,17 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Route, Switch } from "react-router-dom";
-import "./App.css";
+import Formpage from "./components/Formpage";
+import Header from "./components/Header";
+import Statspage from "./components/Statspage";
+import MainContent from "./components/Maincontent";
 
 class App extends React.Component {
-  state = {};
-
   render() {
     return (
       <>
-        <Formpage />
-        <Fightpage />
+        <Header />
+        <MainContent />
       </>
     );
   }
