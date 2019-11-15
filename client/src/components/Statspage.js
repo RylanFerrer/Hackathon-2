@@ -2,23 +2,27 @@ import React, { Component } from "react";
 
 class Statspage extends React.Component {
   render() {
+    console.log(this.props);
     return (
       <div>
         <div>
-          <img></img>
-          <div className="celeb-name__one"></div>
-          <div className="stat1"></div>
-          <div className="stat2"></div>
-          <div className="stat3"></div>
-          <div className="stat4"></div>
+          <img alt="" src={`${this.props.stats.img1}`} />
+          <div className="celeb-name__one">{`${this.props.stats.celeb1}`}</div>
+          {/* <div className="stat1">{`${this.props.stats.img1}`}</div> */}
+          <div className="stat2">{`${this.props.stats.celebStats1[0]}`}</div>
+          <div className="stat3">{`${this.props.stats.celebStats1[1]}`}</div>
+          <div className="stat4">{`${this.props.stats.celebStats1[2]}`}</div>
+          <div className="stat5">{`${this.props.stats.celebStats1[3]}`}</div>
         </div>
+
         <div>
-          <img></img>
-          <div className="celeb-name__two"></div>
-          <div className="stat1"></div>
-          <div className="stat2"></div>
-          <div className="stat3"></div>
-          <div className="stat4"></div>
+          <img alt="" src={`${this.props.stats.img2}`} />
+          <div className="celeb-name__one">{`${this.props.stats.celeb2}`}</div>
+          {/* <div className="stat1">{`${this.props.stats.img2}`}</div> */}
+          <div className="stat2">{`${this.props.stats.celebStats2[0]}`}</div>
+          <div className="stat3">{`${this.props.stats.celebStats2[1]}`}</div>
+          <div className="stat4">{`${this.props.stats.celebStats2[2]}`}</div>
+          <div className="stat5">{`${this.props.stats.celebStats2[3]}`}</div>
         </div>
       </div>
     );

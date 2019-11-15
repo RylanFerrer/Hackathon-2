@@ -21,8 +21,6 @@ export default class MainContent extends React.Component {
           <Formpage />
         </>
       );
-    } else {
-      return <Fightpage stats={this.state} />;
-    }
+    } else return <Fightpage stats={this.state} />;
   }
 }
