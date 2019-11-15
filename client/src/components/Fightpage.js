@@ -8,7 +8,10 @@ class Fightpage extends React.Component {
     return (
       <section>
         <StatsPage stats={this.props.stats} />
-        <FightEvent health={this.props.health} />
+        <FightEvent
+          health1={this.props.stats.health1}
+          health2={this.props.stats.health2}
+        />
       </section>
     );
   }
