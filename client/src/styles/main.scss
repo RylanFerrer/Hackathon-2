@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+html,
+body {
+  margin: 0;
+  font-family: "sans-serif";
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+* *:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@import "../styles/partials/header.scss";
