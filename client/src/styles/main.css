@@ -3,18 +3,17 @@ body {
   margin: 0;
   font-family: "sans-serif";
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
 * *:before,
 *:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .form-header {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: wheat;
+  color: blueviolet;
 }
 /*# sourceMappingURL=main.css.map */

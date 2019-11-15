@@ -5,7 +5,7 @@ class Formpage extends React.Component {
     return (
       <form>
         <div>
-          <p>Celeb 1</p>
+          <p className="celeb-name">Celeb 1</p>
           <input
             className="form-input__one"
             type="url"
@@ -15,7 +15,7 @@ class Formpage extends React.Component {
         </div>
 
         <div>
-          <p>Celeb 2</p>
+          <p className="celeb-name">Celeb 2</p>
           <input
             className="form-input__two"
             type="url"
