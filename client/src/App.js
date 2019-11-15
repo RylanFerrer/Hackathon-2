@@ -1,13 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <h2> Hackathon 2</h2>
-    </div>
-  );
+class App extends React.Component {
+  state = {};
+
+  render() {
+    return (
+      <>
+        <Formpage />
+        <Fightpage />
+      </>
+    );
+  }
 }
 
 export default App;
