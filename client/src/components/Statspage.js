@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Fightpage from "./Fightpage";
 
 class Statspage extends React.Component {
   render() {
@@ -21,7 +20,6 @@ class Statspage extends React.Component {
           <div className="stat3"></div>
           <div className="stat4"></div>
         </div>
-        <Fightpage />
       </div>
     );
   }
