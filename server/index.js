@@ -25,11 +25,12 @@ const getAllStats = () => {
 
 
 app.get("/celeb", (req,res)=> {
-  
+  console.log("HII")
   ClarifaiApp.models.predict("e466caa0619f444ab97497640cefc4dc", req.query.celebOne).then(
     function(responseone) {
+      console.log(responseone)
         res.json({
-      celeb1: responseone.outputs[0].data.regions[0].data.concepts[0].name,
+      name: responseone.outputs[0].data.regions[0].data.concepts[0].name,
       celebstats1: getAllStats(),
       health1: 0,
       image: req.query.celebOne
