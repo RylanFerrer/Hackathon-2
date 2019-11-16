@@ -13,4 +13,6 @@ body {
   box-sizing: inherit;
 }
 
-@import "../styles/partials/header.scss";
+@import "./partials/variables";
+@import "./partials/header.scss";
+@import "./partials/formpage";

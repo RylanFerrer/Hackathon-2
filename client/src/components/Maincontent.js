@@ -46,26 +46,27 @@ export default class MainContent extends React.Component {
       return (
         <>
           <form onSubmit={event => this.handleSubmit(event)}>
-            <div>
-              <p>Celeb 1</p>
+            {/* <section className="form"> */}
+            <div className="form-celeb">
+              <h4 className="form-celeb__title">Celeb 1</h4>
               <input
-                className="form-input__one"
+                className="form-celeb__input"
                 type="url"
                 name="celebOne"
                 placeholder="Type in the URL"
               />
             </div>
 
-            <div>
-              <p>Celeb 2</p>
+            <div className="form-celeb">
+              <h4 className="form-celeb__title">Celeb 2</h4>
               <input
-                className="form-input__two"
+                className="form-celeb__input"
                 type="url"
                 name="celebTwo"
                 placeholder="Type in the URL"
               />
             </div>
-
+            {/* </section> */}
             <button className="form-button" type="submit" value="reset form">
               SUBMIT
             </button>
