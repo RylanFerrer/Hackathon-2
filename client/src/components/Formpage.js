@@ -1,31 +1,34 @@
 import React, { Component } from "react";
-import axios from 'axios';
+import axios from "axios";
 class Formpage extends React.Component {
-    handleSubmit = (event) => {
-        event.preventDefault();
-      
-        axios.get('/celeb', {
-          params: {
-            celebOne: event.target.celebOne.value,
-          }
-         
-        }).then(response => {
-            console.log(response.data);
-        });
-        axios.get('/celeb', {
-          params: {
-            celebOne: event.target.celebTwo.value,
-          }
-         
-        }).then(response => {
-            console.log(response.data);
-            
-        });
-      }
+  handleSubmit = event => {
+    event.preventDefault();
+
+    axios
+      .get("/celeb", {
+        params: {
+          celebOne: event.target.celebOne.value
+        }
+      })
+      .then(response => {
+        console.log(response.data);
+      });
+    axios
+      .get("/celeb", {
+        params: {
+          celebOne: event.target.celebTwo.value
+        }
+      })
+      .then(response => {
+        console.log(response.data.name);
+        console.log(response.data.image);
+        console.log(response.data.celebstats1);
+        console.log(response.data.health1);
+      });
+  };
   render() {
-    
     return (
-      <form onSubmit= {event => this.handleSubmit(event)}>
+      <form onSubmit={event => this.handleSubmit(event)}>
         <div>
           <p>Celeb 1</p>
           <input
