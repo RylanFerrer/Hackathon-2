@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Statspage from "./Statspage";
-// import FightEvent from "./FightEvent";
+import FightEvent from "./FightEvent";
 
 class Fightpage extends React.Component {
   //this.props is how you access props
@@ -8,10 +8,7 @@ class Fightpage extends React.Component {
     return (
       <section>
         <Statspage stats={this.props.stats} />
-        {/* <FightEvent
-          health1={this.props.stats.health1}
-          health2={this.props.stats.health2}
-        /> */}
+        <FightEvent celebstats={this.props.stats} />
       </section>
     );
   }

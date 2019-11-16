@@ -10,7 +10,7 @@ export default class MainContent extends React.Component {
     health1: 0,
     celeb2: "hva",
     img2: "url2",
-    celebStats2: [21, 22, 23, 24],
+    celebStats2: [4, 3, 2, 1],
     health2: 0
   };
 
