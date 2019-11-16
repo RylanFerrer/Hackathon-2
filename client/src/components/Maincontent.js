@@ -5,16 +5,6 @@ import handleSubmit from "./handleSubmit";
 import Fightpage from "./Fightpage";
 
 export default class MainContent extends React.Component {
-  // state = {
-  //   celeb1: "jim",
-  //   img1: "url",
-  //   celebStats1: [1, 2, 3, 4],
-  //   health1: 0,
-  //   celeb2: "hva",
-  //   img2: "url2",
-  //   celebStats2: [4, 3, 2, 1],
-  //   health2: 0
-  // };
   handleSubmit = event => {
     event.preventDefault();
 
@@ -51,16 +41,10 @@ export default class MainContent extends React.Component {
       });
   };
 
-  componentDidUpdate() {
-    console.log("Component did update");
-    console.log(this.state);
-  }
-
   render() {
     if (this.state === null) {
       return (
         <>
-          {/* <Formpage /> */}
           <form onSubmit={event => this.handleSubmit(event)}>
             <div>
               <p>Celeb 1</p>
