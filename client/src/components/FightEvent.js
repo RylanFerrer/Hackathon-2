@@ -16,8 +16,8 @@ export default class FightEvent extends Component {
   render() {
     let celeb1 = this.props.celebstats.celeb1;
     let celeb2 = this.props.celebstats.celeb2;
-    let health1 = this.props.celebstats.health1;
-    let health2 = this.props.celebstats.health2;
+    // let health1 = this.props.celebstats.health1;
+    // let health2 = this.props.celebstats.health2;
     let stats1 = this.props.celebstats.celebStats2;
     let stats2 = this.props.celebstats.celebStats1;
 
