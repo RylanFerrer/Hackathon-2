@@ -1,10 +1,20 @@
+.instructions {
+  color: $green;
+  font-size: 0.8em;
+  width: 60vw;
+  margin: $center;
+  padding: 24px;
+}
+
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 16px;
 
   .form {
     &-celeb {
+      margin-bottom: 16px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -13,16 +23,13 @@ form {
         padding: 8px;
         font-size: 24px;
         color: $green;
-        // font-family: Georgia, "Times New Roman", Times, serif;
-        // text-align: center;
       }
 
       &__input {
-        width: 60%;
-        // margin-left: 15%;
+        width: 100%;
         padding: 4px;
         border: 1px solid white;
-        backgroun-color: $blue;
+        background-color: $blue;
       }
 
       &__input::placeholder {

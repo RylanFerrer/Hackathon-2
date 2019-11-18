@@ -45,6 +45,12 @@ export default class MainContent extends React.Component {
     if (this.state === null) {
       return (
         <>
+          <p className="instructions">
+            Welcome to Celebrity WWE!!! To play this game, you must first google
+            a celebrity, find an image of them, and "copy image address". You
+            will place that image address into the input fields and click submit
+            when you are done.
+          </p>
           <form onSubmit={event => this.handleSubmit(event)}>
             {/* <section className="form"> */}
             <div className="form-celeb">
