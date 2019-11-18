@@ -5,6 +5,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
+  background-color: black;
 }
 
 * *:before,
@@ -16,14 +17,15 @@ body {
 * {
   margin: 0;
   padding: 0;
+  font-family: "Press Start 2P", cursive;
 }
 
 .form-header {
   line-height: 96px;
   margin: 0 auto;
   text-align: center;
-  background-color: #323232;
-  color: wheat;
+  background-color: black;
+  color: #eaa843;
 }
 
 form {
@@ -55,21 +57,38 @@ form .form-celeb {
 form .form-celeb__title {
   padding: 8px;
   font-size: 24px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #60f26c;
 }
 
 form .form-celeb__input {
   width: 60%;
   padding: 4px;
-  border: 1px solid #323232;
+  border: 1px solid white;
+  backgroun-color: #689be1;
+}
+
+form .form-celeb__input::-webkit-input-placeholder {
+  color: #eaa843;
+}
+
+form .form-celeb__input:-ms-input-placeholder {
+  color: #eaa843;
+}
+
+form .form-celeb__input::-ms-input-placeholder {
+  color: #eaa843;
+}
+
+form .form-celeb__input::placeholder {
+  color: #eaa843;
 }
 
 form .form-button {
   margin: 12px;
   padding: 4px 16px;
-  background-color: #323232;
-  color: wheat;
-  border: 2px solid #323232;
+  background-color: black;
+  color: #eaa843;
+  border: 2px solid white;
   border-radius: 4px;
 }
 /*# sourceMappingURL=main.css.map */

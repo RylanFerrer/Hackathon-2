@@ -53,7 +53,7 @@ export default class MainContent extends React.Component {
                 className="form-celeb__input"
                 type="url"
                 name="celebOne"
-                placeholder="Type in the URL"
+                placeholder="Image URL"
               />
             </div>
 
@@ -63,10 +63,10 @@ export default class MainContent extends React.Component {
                 className="form-celeb__input"
                 type="url"
                 name="celebTwo"
-                placeholder="Type in the URL"
+                placeholder="Image URL"
               />
             </div>
-            {/* </section> */}
+
             <button className="form-button" type="submit" value="reset form">
               SUBMIT
             </button>
