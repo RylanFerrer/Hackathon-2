@@ -6,6 +6,7 @@ body {
   font-family: "sans-serif";
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: black;
 }
 
 * *:before,
@@ -13,4 +14,6 @@ body {
   box-sizing: inherit;
 }
 
-@import "../styles/partials/header.scss";
+@import "./partials/variables";
+@import "./partials/header.scss";
+@import "./partials/formpage";

@@ -5,6 +5,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
+  background-color: black;
 }
 
 * *:before,
@@ -13,8 +14,81 @@ body {
           box-sizing: inherit;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+}
+
 .form-header {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: wheat;
+  line-height: 96px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+  color: #eaa843;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .form-celeb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .form-celeb__title {
+  padding: 8px;
+  font-size: 24px;
+  color: #60f26c;
+}
+
+form .form-celeb__input {
+  width: 60%;
+  padding: 4px;
+  border: 1px solid white;
+  backgroun-color: #689be1;
+}
+
+form .form-celeb__input::-webkit-input-placeholder {
+  color: #eaa843;
+}
+
+form .form-celeb__input:-ms-input-placeholder {
+  color: #eaa843;
+}
+
+form .form-celeb__input::-ms-input-placeholder {
+  color: #eaa843;
+}
+
+form .form-celeb__input::placeholder {
+  color: #eaa843;
+}
+
+form .form-button {
+  margin: 12px;
+  padding: 4px 16px;
+  background-color: black;
+  color: #eaa843;
+  border: 2px solid white;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=main.css.map */
