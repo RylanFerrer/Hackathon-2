@@ -21,10 +21,12 @@ export default class FightEvent extends Component {
       let fighter1 = arr1[index];
       let fighter2 = arr2[index];
       if (fighter1 > fighter2) {
+        console.log(fighter2Count + 1);
         this.setState({
           fighter2Count: fighter2Count + 1
         });
       } else if (fighter1 < fighter2) {
+        console.log(fighter1Count + 1);
         this.setState({
           fighter1Count: fighter1Count + 1
         });
@@ -36,18 +38,24 @@ export default class FightEvent extends Component {
     };
 
     if (this.state.fighter1Count > 1) {
-      return <h1>{`And the winner is ${this.props.celebstats.celeb2}`}</h1>;
+      return (
+        <h1 className="winning-fighter">{`And the winner is ${this.props.celebstats.celeb2}`}</h1>
+      );
     } else if (this.state.fighter2Count > 1) {
-      return <h1>{`And the winner is ${this.props.celebstats.celeb1}`}</h1>;
+      return (
+        <h1 className="winning-fighter">{`And the winner is ${this.props.celebstats.celeb1}`}</h1>
+      );
     } else
       return (
-        <div>
-          <h1>FIGHT TIME</h1>
-          <div>{`${celeb1}`} Health</div>
+        <div className="fight-event">
+          <h1 className="fight">FIGHT TIME</h1>
+          <div className="celeb-health">{`${celeb1}`} Health</div>
           <HealthBar healthStatus={this.state.fighter1Count} />
-          <div>{`${celeb2}`} Health</div>
+          <div className="celeb-health">{`${celeb2}`} Health</div>
           <HealthBar healthStatus={this.state.fighter2Count} />
-          <button onClick={fightNow}>Next Round</button>
+          <button className="next-round" onClick={fightNow}>
+            Next Round
+          </button>
         </div>
       );
   }

@@ -28,6 +28,14 @@ body {
   color: #eaa843;
 }
 
+.instructions {
+  color: #60f26c;
+  font-size: 0.8em;
+  width: 60vw;
+  margin: 0 auto;
+  padding: 24px;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,9 +47,11 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 16px;
 }
 
 form .form-celeb {
+  margin-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,10 +71,10 @@ form .form-celeb__title {
 }
 
 form .form-celeb__input {
-  width: 60%;
+  width: 100%;
   padding: 4px;
   border: 1px solid white;
-  backgroun-color: #689be1;
+  background-color: #689be1;
 }
 
 form .form-celeb__input::-webkit-input-placeholder {
@@ -90,5 +100,117 @@ form .form-button {
   color: #eaa843;
   border: 2px solid white;
   border-radius: 4px;
+}
+
+.fight-headline {
+  color: #eaa843;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 24px;
+  font-size: 2em;
+}
+
+.celeb {
+  width: 90vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+}
+
+.celeb-stats {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.celeb-stats__image-container {
+  width: 350px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.celeb-stats__image-container--content {
+  width: 100%;
+  border: 2px solid white;
+}
+
+.celeb-stats__name {
+  color: #60f26c;
+  padding: 16px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.celeb-stats__stat {
+  padding: 8px;
+  color: #60f26c;
+}
+
+.fight-event {
+  width: 40vw;
+  margin: 0 auto;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.fight-event .fight {
+  color: #eaa843;
+  padding: 12px;
+  font-size: 1.5em;
+}
+
+.fight-event .celeb-health {
+  color: #60f26c;
+  padding: 12px;
+  margin-top: 12px;
+}
+
+.fight-event .next-round {
+  margin: 24px;
+  padding: 4px 16px;
+  background-color: black;
+  color: #eaa843;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+.fight-event .winning-fighter {
+  color: #60f26c;
+  background-color: #60f26c;
+}
+
+.fight-event .full-health {
+  width: 100%;
+  height: 48px;
+  color: #60f26c;
+  background-color: #60f26c;
+}
+
+.fight-event .full-health__content {
+  color: #60f26c;
+}
+
+.fight-event .half-health {
+  width: 35%;
+  height: 48px;
+  color: #eaa843;
+  background-color: #eaa843;
+}
+
+.fight-event .half-health__content {
+  color: #eaa843;
 }
 /*# sourceMappingURL=main.css.map */

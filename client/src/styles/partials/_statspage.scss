@@ -1,0 +1,46 @@
+.fight-headline {
+  color: $orange;
+  width: 50%;
+  text-align: center;
+  margin: $center;
+  padding: 24px;
+  font-size: 2em;
+}
+
+.celeb {
+  width: 90vw;
+  margin: $center;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+
+  &-stats {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image-container {
+      width: 350px;
+      height: auto;
+      margin-bottom: 16px;
+
+      &--content {
+        width: 100%;
+        border: 2px solid white;
+      }
+    }
+
+    &__name {
+      color: $green;
+      padding: 16px;
+      font-size: 1.3em;
+      text-align: center;
+    }
+
+    &__stat {
+      padding: 8px;
+      color: $green;
+    }
+  }
+}
