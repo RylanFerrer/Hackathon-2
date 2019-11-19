@@ -1,3 +1,9 @@
+.winning-fighter {
+  color: red;
+  background-color: $green;
+  text-align: center;
+  margin-top:20px;
+}
 .fight-event {
   width: 40vw;
   margin: $center;
@@ -25,10 +31,6 @@
     border-radius: 4px;
   }
 
-  .winning-fighter {
-    color: $green;
-    background-color: $green;
-  }
 
   .full-health {
     width: 100%;

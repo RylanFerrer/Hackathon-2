@@ -159,6 +159,13 @@ form .form-button {
   color: #60f26c;
 }
 
+.winning-fighter {
+  color: red;
+  background-color: #60f26c;
+  text-align: center;
+  margin-top: 20px;
+}
+
 .fight-event {
   width: 40vw;
   margin: 0 auto;
@@ -185,11 +192,6 @@ form .form-button {
   color: #eaa843;
   border: 2px solid white;
   border-radius: 4px;
-}
-
-.fight-event .winning-fighter {
-  color: #60f26c;
-  background-color: #60f26c;
 }
 
 .fight-event .full-health {

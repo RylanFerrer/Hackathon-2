@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom';
 import checkIndex from "./fightfunctions/fightOnClick";
 import HealthBar from "./fightfunctions/HealthBar";
 
@@ -7,7 +8,7 @@ export default class FightEvent extends Component {
     fighter1Count: 0,
     fighter2Count: 0
   };
-
+  
   render() {
     let celeb1 = this.props.celebstats.celeb1;
     let celeb2 = this.props.celebstats.celeb2;
@@ -37,11 +38,12 @@ export default class FightEvent extends Component {
       return checkStats(stats1, stats2);
     };
 
-    if (this.state.fighter1Count > 1) {
+    if (this.state.fighter1Count === 2) {
       return (
-        <h1 className="winning-fighter">{`And the winner is ${this.props.celebstats.celeb2}`}</h1>
+         <h1 className="winning-fighter">{`And the winner is ${this.props.celebstats.celeb2}`}</h1>
+        
       );
-    } else if (this.state.fighter2Count > 1) {
+    } else if (this.state.fighter2Count === 2) {
       return (
         <h1 className="winning-fighter">{`And the winner is ${this.props.celebstats.celeb1}`}</h1>
       );
