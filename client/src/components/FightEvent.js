@@ -8,7 +8,9 @@ export default class FightEvent extends Component {
     fighter1Count: 0,
     fighter2Count: 0
   };
-  
+  handleSubmit = () => {
+    window.location.reload()
+  }
   render() {
     let celeb1 = this.props.celebstats.celeb1;
     let celeb2 = this.props.celebstats.celeb2;
@@ -40,12 +42,17 @@ export default class FightEvent extends Component {
 
     if (this.state.fighter1Count === 2) {
       return (
+        <>
          <h1 className="winning-fighter">{`And the winner is ${this.props.celebstats.celeb2}`}</h1>
-        
+         <button className = "form-button" onClick = {() => window.location.reload(false)}>Play Again</button>
+        </>
       );
     } else if (this.state.fighter2Count === 2) {
       return (
+        <>
         <h1 className="winning-fighter">{`And the winner is ${this.props.celebstats.celeb1}`}</h1>
+        <button  className = "form-button" onClick = {() => window.location.reload(false)}>Play Again</button>
+        </>
       );
     } else
       return (
